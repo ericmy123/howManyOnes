@@ -1,9 +1,9 @@
 let countOfOnes = 0;
-let arrayOfOnes = [];
+let rangeArray = [];
 
 const range = (start, end) => {
     for (let i = start; i < end; i++) {
-        arrayOfOnes.push(i);
+        rangeArray.push(i);
     }
 }
 
@@ -13,5 +13,5 @@ const endNum = 100;
 range(startNum, endNum);
 
 
-const filteredArray = arrayOfOnes.filter(ones => ones === 1);
+const filteredArray = rangeArray.filter(ones => ones === 1);
 console.log(filteredArray);
