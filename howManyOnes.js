@@ -5,13 +5,19 @@ const range = (start, end) => {
     for (let i = start; i < end; i++) {
         rangeArray.push(i);
     }
+    return rangeArray;
 }
 
-
-const startNum = 1;
+const startNum = 1; //modify startNum and endNum to accept user input from html form through react
 const endNum = 100;
 range(startNum, endNum);
 
 
-const filteredArray = rangeArray.filter(ones => ones === 1);
-console.log(filteredArray);
+let rangeString = rangeArray.toString();
+
+for (let ones of rangeString) {
+    if (ones.includes('1')) {
+        countOfOnes++;
+    }
+}
+console.log(countOfOnes);
